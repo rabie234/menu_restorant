@@ -1,0 +1,55 @@
+/* start header strip */
+
+.header-top-strip{
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.header-top-strip .slide-text{
+    animation: slidText 20s infinite linear;
+    cursor: pointer;
+}
+.header-top-strip:hover .slide-text{
+    animation-play-state: paused;
+
+}
+
+@keyframes slidText {
+    0%{
+        transform: translateX(-120%);
+
+    }
+    100%{
+        transform: translateX(120%);
+    }
+}
+
+/* end header strip */
+
+
+/* start header bottom */
+
+
+.header-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    background-color: var(--text-white);
+
+}
+.header-bottom .left-header-bottom ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}

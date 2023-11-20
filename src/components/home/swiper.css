@@ -1,0 +1,107 @@
+.mySwiper.swiper {
+    width: 100%;
+   height: 50vh;
+  }
+  
+  .mySwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .mySwiper .swiper-slide .slide-content.slide1 {
+    background-image: url(https://wallpapers.com/images/hd/vibrant-cocktail-bar-drinks-u1lx0k1xnct7x3h0.jpg);
+   
+    
+
+  }
+  .mySwiper .swiper-slide .slide-content.slide2 {
+    background-image: url(https://www.lejournallive.com/wp-content/uploads/2017/12/Larkurger-900x600.jpg);
+   
+    
+
+  }
+  .mySwiper .swiper-slide .slide-content.slide3 {
+    background-image: url(https://t3.ftcdn.net/jpg/03/09/85/36/360_F_309853648_yJJrVCYncv1D4raXzSH39WUlrRMLEwv3.jpg);
+   
+    
+
+  }
+  .mySwiper .swiper-slide .slide-content{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .mySwiper .slide-content .text-slide{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: var( --text-white);
+    padding: 0 30px;
+   line-height: 50px;
+    z-index: 999;
+
+
+  }
+  .mySwiper .slide-content .text-slide h4{
+    font-family: var(--font-cursive);
+    color: var(--color-secondary);
+  }
+  .mySwiper .slide-content .text-slide.active h2{
+    animation: textslideanim 1s forwards;
+  }
+  .mySwiper .slide-content .text-slide.active p{
+    animation: textslideanim 2s forwards;
+  }
+  .mySwiper .swiper-slide .slide-content::after{
+  background-image: linear-gradient( 45deg,#041527d3,#04152771);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  content: '';
+  z-index:9;
+  position: absolute;
+  }
+
+  .mySwiper  .swiper-button-prev,  .mySwiper  .swiper-button-next{
+    color: var(--color-secondary);
+  }
+  .mySwiper  .swiper-pagination-bullet-active {
+    background: var(--color-secondary);
+}
+.mySwiper .swiper-pagination-bullet {
+
+    background: var(--color-secondary)
+    
+}
+
+.mySwiper .swiper-button-prev:after,.mySwiper .swiper-button-next:after {
+
+    /* font-size: var(--swiper-navigation-size); */
+   
+    font-size: 25px;
+
+    font-weight: 600;
+    /* background: var(--color-primary); */
+    background-blend-mode: color-burn;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+@keyframes textslideanim {
+    from{
+       transform:translateX(-20px);
+       opacity: 0;
+    }to{
+         transform:  translateX(0);
+         opacity: 1;
+    }
+}
